@@ -1,14 +1,30 @@
+import React, { useEffect, useState } from "react";
 import './style.css'
 import LogoJakomkris from '../../assets/image/logo_jakomkris.png'
 import Cover from '../../assets/image/cover_gereja.png';
 
 const Header = () => {
+    const [greeting, setGreeting] = useState("");
+
+    useEffect(() => {
+        const currentTime = new Date().getHours();
+        if (currentTime >= 2 && currentTime < 10) {
+            setGreeting("Selamat Pagi!");
+        } else if (currentTime >= 10 && currentTime < 15) {
+            setGreeting("Selamat Siang!");
+        } else if (currentTime >= 15 && currentTime < 18) {
+            setGreeting("Selamat Sore!");
+        } else {
+            setGreeting("Selamat Malam!");
+        }
+    });
+
     return (
         <div className="header">
             <div id="greetings">
                 <img src={LogoJakomkris} id="logo" alt="Logo JAKOMKRIS" draggable="false" />
 
-                <h1 class="blue-signature s0" id="greetings-time">Halo!</h1>
+                <h1 class="blue-signature s0" id="greetings-time">{greeting}</h1>
                 <h1 class="orange-signature s2">Selamat Datang di Situs Gereja Tangguh Bencana</h1>
                 <p class="gray">Situs ini memuat data Gereja di Indonesia untuk mitigasi dan informasi terkait bencana alam.</p>
 
