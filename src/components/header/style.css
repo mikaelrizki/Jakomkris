@@ -107,3 +107,111 @@
     font-weight: 400;
     color: #000000a0;
 }
+
+@media (max-width: 1359px) {
+    .header {
+        width: fit-content;
+        max-width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header {
+        width: 100%;
+        max-width: 90%;
+        display: block;
+    }
+
+    #cover {
+        display: none;
+    }
+
+    #greetings {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        width: 100%;
+        max-width: fit-content;
+        height: fit-content;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #search input {
+        width: 100%;
+    }
+
+    #search button {
+        padding: 0 20px;
+    }
+
+    #search select,
+    #search div {
+        display: none;
+    }
+
+    #greetings {
+        width: 100%;
+    }
+
+    #count {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #count div {
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #e7e7e7;
+    }
+
+    #greetings h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 680px) {
+    #greetings {
+        padding-top: 50px;
+    }
+
+    #greetings h1 {
+        font-size: 1em;
+        margin-bottom: 5px;
+        max-width: 90%;
+    }
+
+    #greetings p {
+        margin-top: 10px;
+        font-size: 0.8em;
+    }
+
+    #logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    #search {
+        border-radius: 15px;
+    }
+
+    #search button {
+        font-size: 0.9em;
+        border-radius: 15px;
+    }
+
+    #count {
+        display: none;
+    }
+}
