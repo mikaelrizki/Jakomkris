@@ -1,10 +1,10 @@
 import './style.css'
+import './carousel.js'
 import IconPrev from '../../assets/icon/ic_prev.png';
 import IconNext from '../../assets/icon/ic_next.png';
 import Artikel1 from '../../assets/article/article1.png';
 import Artikel2 from '../../assets/article/article2.png';
 import Artikel3 from '../../assets/article/article3.png';
-
 
 const Article = () => {
     return (
