@@ -6,6 +6,8 @@ import Register from './pages/Register'
 import DataGereja from './pages/DataGereja'
 import Peta from './pages/Peta'
 import Dashboard from "./pages/Dashboard"
+import Gempa from './pages/Gempa'
+import Forum from './pages/Forum'
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
         <Route path="/data" element={ <DataGereja/> } />
         <Route path="/peta" element={ <Peta/> } />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/gempa" element={ <DataGereja/> } />
-        <Route path="/forum" element={ <DataGereja/> } />
+        <Route path="/gempa" element={ <Gempa/> } />
+        <Route path="/forum" element={ <Forum/> } />
         <Route path="/galeri" element={ <DataGereja/> } />
         <Route path="/data" element={ <DataGereja/> } />
         <Route path="/about" element={ <DataGereja/> } />
