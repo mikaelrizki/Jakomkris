@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import mapboxgl from 'mapbox-gl'
 import axios from 'axios'
 import Loading from '../../assets/image/loading.gif'
-import './style.css'
+import './stylePetaBeranda.css'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
@@ -206,8 +206,33 @@ export default function Peta() {
 
     return (
         <div className="map-sidebar-container">
-            <div id="map" className="map"></div>
-            <div id="sidebar" className="sidebar">
+            <style>
+                {`
+                .mapboxgl-ctrl-group {
+                    display: none !important; 
+                } 
+                .mapBeranda { 
+                    border-radius: 10px !important; 
+                }
+                @media (max-width: 1359px) {
+                    #map {
+                        width: 100%;
+                        max-width: 90%;
+                    }
+                }
+                @media (max-width: 1000px) {
+                    #map {
+                        width: 80%;
+                    }
+                }
+                @media (max-width: 440px) {
+                    #map {
+                        width: 72%;
+                    }
+                }`}
+            </style>
+            <div id="map" className="mapBeranda"></div>
+            <div id="sidebar" className="sidebarBeranda">
                 {/* Sidebar content */}
             </div>
         </div>

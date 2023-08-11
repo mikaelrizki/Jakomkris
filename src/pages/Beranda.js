@@ -5,6 +5,7 @@ import Header from '../components/header/Header'
 import Article from '../components/article/Article'
 import Footer from '../components/footer/FooterBeranda'
 import Maps from '../components/maps/Maps'
+import MapsComponents from '../components/peta/PetaBeranda'
 import NavBarBeranda from '../components/navbar/NavBarBeranda'
 
 const Beranda = () => {
@@ -22,6 +23,7 @@ const Beranda = () => {
                 <Header />
                 <Article />
                 <Maps />
+                <MapsComponents />
                 <Footer />
             </div>
         );
