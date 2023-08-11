@@ -1,10 +1,4 @@
-.gempa-container {
-    padding-top: 20px;
-    height: 900px;
-    background-color: white;
-}
-
-.kanan {
+/* .kanan {
     float: right;
     width: 45vw;
     margin: 10px 10px;
@@ -14,65 +8,104 @@
     float: left;
     width: 45vw;
     margin: 10px 10px;
+} */
+
+#loading {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.kiri>img {
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gempa-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kiri > img {
     width: 45vw;
 }
 
-.info>table:nth-child(2)>tr:nth-child(odd) {
-    background-color: #EEE;
+.info > table:nth-child(2) > tr:nth-child(odd) {
+    background-color: #eee;
 }
 
-.info>table:nth-child(2)>tr>td {
+.info > table:nth-child(2) > tr > td {
     padding: 10px;
 }
 
-.info>table:nth-child(2) {
+.info > table:nth-child(2) {
     width: 80%;
 }
 
-.info>table:nth-child(2)>tr>td,
-.info>table:nth-child(2) {
-    border: solid 1px #BBB;
+.info > table:nth-child(2) > tr > td,
+.info > table:nth-child(2) {
+    border: solid 1px #bbb;
     border-collapse: collapse;
 }
 
-.info>table:nth-child(3) {
+.info > table:nth-child(3) {
     width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.info>table:nth-child(3)>tr>td:nth-child(1) {
+.info > table:nth-child(3) > tr > td:nth-child(1) {
     padding-left: 20px;
 }
 
-.info>table:nth-child(3)>tr>td:nth-child(2) {
+.info > table:nth-child(3) > tr > td:nth-child(2) {
     padding-left: 50px;
 }
 
-.daftar>table {
+.daftar > table {
     width: 80%;
 }
 
-.daftar>table>tr>td {
+.daftar > table > tr > td {
     padding: 10px;
 }
 
-.daftar>table,
-.daftar>table>tr>td,
-.daftar>table>tr>th {
-    border: solid 1px #BBB;
+.daftar > table,
+.daftar > table > tr > td,
+.daftar > table > tr > th {
+    border: solid 1px #bbb;
     border-collapse: collapse;
 }
 
-.daftar>table>tr:nth-child(odd),
-.daftar>table>tr>th {
-    background-color: #EEE;
+.daftar > table > tr:nth-child(odd),
+.daftar > table > tr > th {
+    background-color: #eee;
 }
 
-@media(max-width:920px) {
+@media (max-width: 920px) {
     .kiri {
         float: none;
         width: 100%;
@@ -82,7 +115,7 @@
         margin: 0px;
     }
 
-    .kiri>img {
+    .kiri > img {
         width: 100vw;
         margin: 0px;
     }
