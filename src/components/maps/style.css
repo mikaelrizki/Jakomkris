@@ -1,0 +1,81 @@
+.peta {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.peta .action {
+    display: flex;
+    align-items: center;
+}
+
+.peta .action p {
+    margin-right: 20px;
+}
+
+iframe {
+    border: 0;
+}
+
+#gmaps {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 1359px) {
+    .peta {
+        margin-top: 35px;
+        max-width: 90%;
+    }
+
+    #gmaps {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    #gmaps iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .peta {
+        max-width: 80%;
+    }
+
+    .peta .action p {
+        display: none;
+    }
+
+    #gmaps {
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    .peta {
+        max-width: 75%;
+        align-items: end;
+    }
+
+    .peta .title h2 {
+        font-size: 1em;
+    }
+
+    .peta .title p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 440px) {
+    .peta {
+        max-width: 72%;
+    }
+
+    #gmaps {
+        width: 72%;
+    }
+}

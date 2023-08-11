@@ -1,0 +1,9 @@
+#showNavBar {
+    width: 75px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: calc(50% + 675px);
+    background-color: #E15E21;
+    border-radius: 0 0 15px 15px;
+}

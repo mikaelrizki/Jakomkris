@@ -1,0 +1,122 @@
+.registerCard {
+    width: 400px;
+    height: 480px;
+    background-color: white;
+    border: solid 2px #e1e1e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register {
+    width: 130px;
+    margin: 20px 0 15px;
+}
+
+.registerForm {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.iconRegister {
+    width: 18px;
+}
+
+#btnRegister {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #E15E21;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+#btnRegister:hover {
+    background-color: #c64910;
+}
+
+@media (max-width: 550px) {
+    .registerCard {
+        width: 300px;
+        height: 400px;
+    }
+
+    #register {
+        width: 110px;
+        margin: 15px 0 10px;
+    }
+
+    .registerForm {
+        width: 250px;
+    }
+
+    .formField .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconRegister {
+        width: 15px;
+    }
+
+    .formField input {
+        width: 180px;
+    }
+
+    #btnRegister {
+        height: 40px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .registerCard {
+        width: 200px;
+        height: 365px;
+    }
+
+    #register {
+        width: 100px;
+        margin: 10px 0 5px;
+    }
+
+    .registerForm {
+        width: 180px;
+        gap: 15px;
+    }
+
+    .formField .icon {
+        width: 35px;
+        height: 40px;
+    }
+
+    .iconRegister {
+        width: 15px;
+    }
+
+    .formField input {
+        width: 115px;
+        font-size: 12px;
+    }
+
+    #btnRegister {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .bpa {
+        font-size: 12px;
+    }
+}

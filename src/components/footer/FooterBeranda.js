@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 import './style.css'
 import LogoAll from '../../assets/image/all_logo.png'
 import WhatsApp from '../../assets/icon/ic_whatsapp.png';
@@ -24,19 +25,19 @@ const Footer = () => {
                             <h2 className="blue-signature">Menu</h2>
                             <div className="menu">
                                 <div className="fcol">
-                                    <Link to="/">Beranda</Link>
-                                    <Link to="/">Artikel</Link>
-                                    <Link to="/">Peta Gereja</Link>
+                                    <ScrollLink to="greetings">Beranda</ScrollLink>
+                                    <ScrollLink to="article">Artikel</ScrollLink>
+                                    <ScrollLink to="maps">Peta Gereja</ScrollLink>
                                 </div>
                                 <div className="scol">
-                                    <Link to="/data">Data Gereja</Link>
-                                    <Link to="/dashboard">Dashboard</Link>
-                                    <Link to="/">Forum Diskusi</Link>
+                                    <RouterLink to="/data">Data Gereja</RouterLink>
+                                    <RouterLink to="/dashboard">Dashboard</RouterLink>
+                                    <RouterLink to="/">Forum Diskusi</RouterLink>
                                 </div>
                                 <div className="lcol">
-                                    <Link to="/">Galeri</Link>
-                                    <Link to="/">Tentang Kami</Link>
-                                    <Link to="/">Pengaturan</Link>
+                                    <RouterLink to="/">Galeri</RouterLink>
+                                    <RouterLink to="/">Tentang Kami</RouterLink>
+                                    <RouterLink to="/">Pengaturan</RouterLink>
                                 </div>
                             </div>
                         </div>

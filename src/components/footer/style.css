@@ -78,6 +78,7 @@
 }
 
 .footer #content .mid div .menu a {
+    cursor: pointer;
     text-decoration: none;
     font-size: 15px;
     color: #000000a0;
@@ -93,6 +94,7 @@
 
 .footer #content .end {
     width: 220px;
+    cursor: pointer;
 }
 
 .footer #content .end h2 {
@@ -112,6 +114,7 @@
     font-size: 15px;
     color: #000000a0;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .footer #content .end a:hover {
@@ -156,7 +159,7 @@
     .footer #content .end {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
     }
 
     .footer #content .end a {
@@ -209,4 +212,3 @@
         display: none;
     }
 }
-

@@ -1,0 +1,46 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card {
+    border: 1px solid #BBB;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.card table>tr:nth-child(1)>td {
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f9e7c6;
+}
+
+.card table>tr:nth-child(2) td:nth-child(1) {
+    float: left;
+    padding: 5px;
+}
+
+.card table>tr:nth-child(2) td:nth-child(2) {
+    float: right;
+    padding: 5px;
+}
+
+#chart {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+@media (max-width: 500px) {
+    #chart {
+        margin: 0px;
+    }
+}
