@@ -1,5 +1,5 @@
-import './style.css'
-import IconMove from '../../assets/icon/ic_next.png';
+import "./style.css";
+import IconMove from "../../assets/icon/ic_next.png";
 
 const Maps = () => {
     return (
@@ -20,4 +20,4 @@ const Maps = () => {
     )
 }
 
-export default Maps
+export default Maps;
