@@ -9,7 +9,7 @@ const Gempa = () => {
     if (isTokenExpired()) {
         sessionStorage.removeItem('token');
         sessionStorage.removeItem('tokenExpiration');
-        console.log('Token has expired');
+        // console.log('Token has expired');
     }
 
     const token = sessionStorage.getItem('token');
