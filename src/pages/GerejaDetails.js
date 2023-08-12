@@ -1,15 +1,16 @@
 import React from "react";
+import NavBar from "../components/navbar/NavBar";
+import Footer from "../components/footer/Footer";
 import { Navigate } from "react-router-dom";
 import { isTokenExpired } from "../utils/Utils";
-import NavBar from "../components/navbar/NavBar";
-import Gereja from "../components/gereja/Gereja";
-import Footer from "../components/footer/Footer";
 
-const DataGereja = () => {
+import GerejaDetail from "../components/gerejaDetail/GerejaDetail";
+
+const GerejaDetails = () => {
 	if (isTokenExpired()) {
 		sessionStorage.removeItem("token");
 		sessionStorage.removeItem("tokenExpiration");
-		// console.log("Token has expired");
+		// console.log('Token has expired');
 	}
 
 	const token = sessionStorage.getItem("token");
@@ -17,7 +18,7 @@ const DataGereja = () => {
 		return (
 			<div>
 				<NavBar />
-				<Gereja />
+				<GerejaDetail />
 				<Footer />
 			</div>
 		);
@@ -26,4 +27,4 @@ const DataGereja = () => {
 	}
 };
 
-export default DataGereja;
+export default GerejaDetails;

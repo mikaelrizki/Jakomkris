@@ -1,17 +1,18 @@
-.map {
-    height: 620px;
-    width: 100%;
+.mapBeranda {
+    height: 500px;
+    width: 1300px;
     margin-bottom: -50px;
+    margin: 0 auto;
 }
 
-.sidebar {
+.sidebarBeranda {
     border-radius: 10px;
     background-color: #ffffffd8;
     overflow: auto;
-    position: fixed;
+    position: absolute;
+    margin-top: -480px;
+    right: calc(50% - 620px);
     z-index: 2;
-    top: 75px;
-    right: 10px;
     padding: 0 20px !important;
 }
 
@@ -22,6 +23,10 @@
     font-size: 14px;
     color: black;
     font-weight: bold;
+}
+
+.mapboxgl-ctrl-bottom-right {
+    display: none;
 }
 
 #custom h4 {
@@ -66,42 +71,52 @@ svg.mapboxgl-ctrl-geocoder--icon.mapboxgl-ctrl-geocoder--icon-search {
     width: 25px;
 }
 
-.sidebar>div#custom>table>tbody>tr>td {
+.sidebarBeranda>div#custom>table>tbody>tr:first-child {
+    background-color: #dadada;
+}
+
+.sidebarBeranda>div#custom>table>tbody>tr>td {
     padding: 5px;
 }
 
-.sidebar>div#custom>table,
-.sidebar>div#custom>table>tbody>tr>td {
+.sidebarBeranda>div#custom>table,
+.sidebarBeranda>div#custom>table>tbody>tr>td {
     border: solid 1px #BBB;
     border-collapse: collapse;
 }
 
-.sidebar>#custom div>#link {
+.sidebarBeranda>#custom div>#link {
     text-decoration: none;
     font-weight: bold;
 }
 
 @media (max-width: 700px) {
-    .map-sidebar-container {
+    .map-sidebarBeranda-container {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .sidebar>#custom>h4 {
+    .sidebarBeranda>#custom>h4 {
         text-align: center;
     }
 }
 
 @media (max-width: 600px) {
-    .sidebar {
+    .sidebarBeranda {
         width: 80% !important;
         position: static;
         margin-top: 80px;
         margin-bottom: -20px;
     }
 
-    .sidebar table {
+    .sidebarBeranda table {
         width: 100%;
+    }
+}
+
+@media (max-width: 1359px) {
+    .sidebarBeranda {
+        display: none;
     }
 }
