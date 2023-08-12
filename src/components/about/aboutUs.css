@@ -1,0 +1,88 @@
+#aboutContainer {
+    margin: 20px;
+}
+
+.atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.gmbr {
+    width: 350px;
+    height: 210px;
+    border-radius: 30px;
+}
+
+.tengah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+}
+
+#misi {
+    width: 60%;
+    justify-self: end;
+}
+
+#jakomkris {
+    width: 150px;
+    height: 100px;
+}
+
+.bawah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.bawah>div {
+    width: 60%;
+    justify-self: start;
+}
+
+#partnership {
+    width: 50%;
+    height: fit-content;
+    margin: 50px;
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carousel {
+    max-width: 500px;
+}
+
+.atasTitle {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .atas {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tengah {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bawah {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

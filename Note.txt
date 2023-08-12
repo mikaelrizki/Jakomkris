@@ -10,3 +10,4 @@ npm install chartjs-plugin-datalabels
 npm install @mapbox/mapbox-gl-geocoder
 npm install --save react-map-gl mapbox-gl
 npm install disqus-react
+npm install react-bootstrap bootstrap

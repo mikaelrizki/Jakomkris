@@ -11,13 +11,23 @@
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 5px;
+    max-width: 40%;
+}
+
+.cardImg {
+    width: 27px;
+    height: fit-content;
+}
+#imgDisaster{
+    width: 37px;
 }
 
 .card table>tr:nth-child(1)>td {
     width: 100%;
     align-items: center;
-    border-radius: 5px;
-    background-color: #f9e7c6;
+    border-radius: 3px;
+    background-color: #DDD;
+    padding: 5px;
 }
 
 .card table>tr:nth-child(2) td:nth-child(1) {

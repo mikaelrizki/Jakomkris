@@ -72,7 +72,7 @@ export default function Peta() {
         if (!gerejaData) return;
         const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/nuelvs/cl8wk0xfn000v14qsukkzdajj',
+            style: 'mapbox://styles/mapbox/outdoors-v12',
             center: [viewPort.longitude, viewPort.latitude],
             zoom: viewPort.zoom,
             bearing: 360.0,

@@ -4,6 +4,7 @@ import Beranda from './pages/Beranda'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import DataGereja from './pages/DataGereja'
+import About from './pages/About'
 import Peta from './pages/Peta'
 import Dashboard from "./pages/Dashboard"
 import Gempa from './pages/Gempa'
@@ -23,7 +24,7 @@ function App() {
         <Route path="/forum" element={ <Forum/> } />
         <Route path="/galeri" element={ <DataGereja/> } />
         <Route path="/data" element={ <DataGereja/> } />
-        <Route path="/about" element={ <DataGereja/> } />
+        <Route path="/about" element={ <About/> } />
       </Routes>
     </Router>
   );
