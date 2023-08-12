@@ -1,9 +1,50 @@
-#showNavBar {
-    width: 75px;
-    height: 100px;
+#expandMore {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
     position: fixed;
     top: 0;
-    left: calc(50% + 675px);
+    right: calc(50% - 740px);
     background-color: #E15E21;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 50px 50px;
+    cursor: pointer;
+    z-index: 2;
+    user-select: none;
+}
+
+#expandMore:hover {
+    background-color: #c94e15;
+}
+
+#expandMore span {
+    color: white;
+    font-size: 42px;
+}
+
+@media screen and (max-width: 1600px) {
+    #expandMore {
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #expandMore {
+        width: 40px;
+        right: 70px;
+    }
+
+    #expandMore span {
+        color: white;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #expandMore {
+        width: 40px;
+        right: 20%;
+    }
 }
